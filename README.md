@@ -5,7 +5,7 @@
 
 <br>
 
-# Dotfiles-Nixy
+# Homepage firefox
 
 <br>
 
