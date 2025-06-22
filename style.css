@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('../fonts/MyFont-Regular.woff2') format('woff2'),
+       url('../fonts/MyFont-Regular.woff')  format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  background: #02030C;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 200px 430px 200px;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+.date p{
+  color: gray;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.title {
+  color: #C4AFD3;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #C4AFD3;
+}
+.title_2 {
+  color: #C4AFD3;
+  font-size: 27px;
+  text-align: center;
+}
+
+.title_marks {
+  color: #C4AFD3;
+}
+.google_search {
+  text-align: center;
+}
+.google_search input {
+  padding:10px 350px 10px 5px;
+  margin:0 5px 10px 0;
+  background-color: #c9c9c9;
+  border: 2px solid #C4AFD3;
+  border-radius: 10px;
+  color: black;
+}
+.google_search input::placeholder {
+  color: #000;        
+}
+
+.marks_flex {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marks_block {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  gap: 16px;        
+  margin-bottom: 10px;
+}
+
+.marks_flex a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.marks_block {
+  transition: transform 0.2s ease-in-out;
+}
+
+.marks_block:hover {
+   transform: scale(1.03);
+}
+
+.marks_block  img {
+  width: 60px;
+  height: 70px;
+  width: 50px;
+  padding: 0px 10px 15px 0px;
+  filter: grayscale(100%);
+  transition: opacity 0.3s ease;
+}
+
+.marks_block:hover img {
+  opacity: 0.5;
+}
+
+.title_3 {
+  font-weight: 400;
+  color: white;
+  position: relative;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+.title_3::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: #C4AFD3;
+      transition: width 0.3s ease;
+}
+.marks_block:hover .title_3 {
+  color: #C4AFD3;
+}
+
+.marks_block:hover .title_3::after {
+  width: 100%;
+}
+
+.block_text p {
+  position: relative;
+  top: -15px;
+  white-space: nowrap;
+  color: gray;
+}
