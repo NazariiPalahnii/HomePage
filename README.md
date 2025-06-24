@@ -12,4 +12,4 @@
 
 ## Gallery
 
-![Homepage, firefox](git_img/2025-06-22_16:22:09.png)
+![Homepage, firefox](git_img/2025-06-24_13:03:41.png)
